@@ -9,37 +9,63 @@ const col = 5;
 const row = 5;
 var region =0;
 
-const cells = [];
+ const cells = [];
 
 for (let i = 0; i < row; i++)
 {
   cells[i] = [];
   for (let j = 0; j < col; j++)
   {
-    cells[i+2][j] = 'Arif';
+    
+    cells[i][j] = 0;
+    if (i%2==0)
+    cells[i][j] = 1;
   }
 }
 
-if (cells[0][0] == 'Arif' && cells[0][0] == 'Arif') 
-region++;
+// for (let k = 0; k < row; k++)
+// {
+//   for (let l = 0; l < col; l++)
+//   {
+//     if (cells[k][l] == 1 && cells[k][l+1] == 1) 
+//     region++;
 
-console.log(cells);
-console.log(available);
+//      else if (cells[k][l] == 1 && cells[k+1][l] == 1)
+//      region++;
+    
+//      else if (cells[k][l] == 1 && cells[k+1][l+1] == 1)
+//      region++;
+
+//      else if (cells[k][l] == 1 && cells[k-1][l-1] == 1)
+//      region++;
+
+
+//   }
+// }
+// 
+// region++;
+
+ console.log(cells);
+//  console.log(region);
 
 function HomeScreen() {
   return (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
- <TextInput
-        style={{height: 40}}
-        placeholder="Type here to translate!"
+      <Text>Enter row and column below</Text>
+      <TextInput
+        style={{height: 40, backgroundColor:'white'}}
+        placeholder="Type here to enter row"
+      />
+      <TextInput
+        style={{height: 40, backgroundColor:'white'}}
+        placeholder="Type here to enter column"
       />
 
 <Button
-  //onPress={onPressLearnMore}
-  title="Learn More"
+  //onPress={submit}
+  title="Submit"
   color="#841584"
-  accessibilityLabel="Learn more about this purple button"
+  accessibilityLabel="Submit"
 />
 
 
