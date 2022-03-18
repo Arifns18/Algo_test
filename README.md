@@ -7,6 +7,6 @@ Hauz Assessment
 # Array
 ![image](https://user-images.githubusercontent.com/73942198/158980144-f9789067-dd0b-4025-a86b-ca2623957c9b.png)
 
-#Algorithm (Unsuccessful)
+# Algorithm (Unsuccessful)
 ![image](https://user-images.githubusercontent.com/73942198/158980465-983ac53b-a078-458a-9249-88902f7b635b.png)
 
