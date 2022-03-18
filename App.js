@@ -7,7 +7,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const col = 5;
 const row = 5;
-var available =0;
+var region =0;
 
 const cells = [];
 
@@ -16,12 +16,12 @@ for (let i = 0; i < row; i++)
   cells[i] = [];
   for (let j = 0; j < col; j++)
   {
-    cells[i][j] = 'Arif';
+    cells[i+2][j] = 'Arif';
   }
 }
 
 if (cells[0][0] == 'Arif' && cells[0][0] == 'Arif') 
-available = 9;
+region++;
 
 console.log(cells);
 console.log(available);
